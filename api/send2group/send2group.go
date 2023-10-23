@@ -2,9 +2,9 @@ package send2group
 
 import (
 	"encoding/json"
-	"github.com/woodylan/go-websocket/api"
-	"github.com/woodylan/go-websocket/define/retcode"
-	"github.com/woodylan/go-websocket/servers"
+	"github.com/capeskychung/game_slg/api"
+	"github.com/capeskychung/game_slg/define/retcode"
+	"github.com/capeskychung/game_slg/servers"
 	"net/http"
 )
 

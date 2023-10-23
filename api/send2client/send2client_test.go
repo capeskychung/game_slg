@@ -3,7 +3,7 @@ package send2client
 import (
 	"encoding/json"
 	. "github.com/smartystreets/goconvey/convey"
-	"github.com/woodylan/go-websocket/pkg/setting"
+	"github.com/capeskychung/game_slg/pkg/setting"
 	"io/ioutil"
 	"net/http"
 	"net/http/httptest"

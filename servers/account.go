@@ -3,9 +3,9 @@ package servers
 import (
 	"encoding/json"
 	"errors"
-	"github.com/woodylan/go-websocket/define"
-	"github.com/woodylan/go-websocket/pkg/etcd"
-	"github.com/woodylan/go-websocket/tools/util"
+	"github.com/capeskychung/game_slg/define"
+	"github.com/capeskychung/game_slg/pkg/etcd"
+	"github.com/capeskychung/game_slg/tools/util"
 	"sync"
 	"time"
 )

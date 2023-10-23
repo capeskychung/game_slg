@@ -1,12 +1,12 @@
 package routers
 
 import (
-	"github.com/woodylan/go-websocket/api"
-	"github.com/woodylan/go-websocket/define"
-	"github.com/woodylan/go-websocket/define/retcode"
-	"github.com/woodylan/go-websocket/pkg/etcd"
-	"github.com/woodylan/go-websocket/servers"
-	"github.com/woodylan/go-websocket/tools/util"
+	"github.com/capeskychung/game_slg/api"
+	"github.com/capeskychung/game_slg/define"
+	"github.com/capeskychung/game_slg/define/retcode"
+	"github.com/capeskychung/game_slg/pkg/etcd"
+	"github.com/capeskychung/game_slg/servers"
+	"github.com/capeskychung/game_slg/tools/util"
 	"net/http"
 )
 

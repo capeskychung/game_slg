@@ -1,11 +1,10 @@
-package closeclient
+package bilog
 
 import (
-	"encoding/json"
-	"github.com/capeskychung/game_slg/api"
 	"github.com/capeskychung/game_slg/define/retcode"
-	"github.com/capeskychung/game_slg/servers"
+	"github.com/capeskychung/game_slg/api"
 	"net/http"
+	"encoding/json"
 )
 
 type Controller struct {
@@ -13,6 +12,9 @@ type Controller struct {
 
 type inputData struct {
 	ClientId string `json:"clientId" validate:"required"`
+	UseId    string `json:"user_id" validate:"required"`
+	BIKey    string `json:"bi_key" validate:"required"`
+	Value    string `json:"value" validate:"value"`
 }
 
 func (c *Controller) Run(w http.ResponseWriter, r *http.Request) {
@@ -28,10 +30,7 @@ func (c *Controller) Run(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	systemId := r.Header.Get("SystemId")
-
-	//发送信息
-	servers.CloseClient(inputData.ClientId, systemId)
+	//systemId := r.Header.Get("SystemId")
 
 	api.Render(w, retcode.SUCCESS, "success", map[string]string{})
 	return

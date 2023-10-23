@@ -2,13 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/woodylan/go-websocket/define"
-	"github.com/woodylan/go-websocket/pkg/etcd"
-	"github.com/woodylan/go-websocket/pkg/setting"
-	"github.com/woodylan/go-websocket/routers"
-	"github.com/woodylan/go-websocket/servers"
-	"github.com/woodylan/go-websocket/tools/log"
-	"github.com/woodylan/go-websocket/tools/util"
+	"github.com/capeskychung/game_slg/define"
+	"github.com/capeskychung/game_slg/pkg/etcd"
+	"github.com/capeskychung/game_slg/pkg/setting"
+	"github.com/capeskychung/game_slg/routers"
+	"github.com/capeskychung/game_slg/servers"
+	"github.com/capeskychung/game_slg/tools/log"
+	"github.com/capeskychung/game_slg/tools/util"
 	"net"
 	"net/http"
 )
