@@ -11,6 +11,7 @@ import (
 	"github.com/capeskychung/game_slg/servers"
 	"net/http"
 	"github.com/capeskychung/game_slg/api/bilog"
+	"github.com/capeskychung/game_slg/tools/db"
 )
 
 func Init() {
@@ -34,7 +35,7 @@ func Init() {
 
 	servers.StartWebSocket()
 
-	//db.InitDB()
+	db.InitDB()
 
 	go servers.WriteMessage()
 }

@@ -13,6 +13,7 @@ type commonConf struct {
 	RPCPort   string
 	Cluster   bool
 	CryptoKey string
+	DbPath    string
 }
 
 var CommonSetting = &commonConf{}
